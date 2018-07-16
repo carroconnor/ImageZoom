@@ -2,18 +2,49 @@
 @{
     ViewBag.Title = "About";
 }
+
+<link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+
+
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 
 <p>Use this area to provide additional information.</p>
 
-<div>
-    <a href="~/Pictures/Point.jpg" data-lightbox="Point.jpg">
-        <img src="~/Pictures/Point.JPG" alt="Alternate Text" />
-        </a>
+<div class="show" href="https://images-na.ssl-images-amazon.com/images/I/71nJUJuiukL._AC_.jpg">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/71nJUJuiukL._AC_.jpg" id="show-img" alt="example">
 </div>
-<div>
-    <a href="~/Pictures/profilepic.jpg" data-lightbox="profilepic.jpg">
-    <img src="~/Pictures/profilepic.jpg" alt="Alternate Text" />
-    </a>
+<div class="small-img">
+    <img src="images/online_icon_right@2x.png" class="icon-left" alt="" id="prev-img">
+    <div class="small-container">
+        <div id="small-img-roll">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71nJUJuiukL._AC_.jpg" class="show-small-img" alt="">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61ux1cU49XL._AC_.jpg" class="show-small-img" alt="">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81WL3%2BI3QwL._AC_.jpg" class="show-small-img" alt="">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71F6QpeqLJL._AC_.jpg" class="show-small-img" alt="">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61lK8SdSXXL._SX679_.jpg" class="show-small-img" alt="">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81gKCwkfQ-L._AC_SL1500_.jpg" class="show-small-img" alt="">
+        </div>
+    </div>
+    <img src="images/online_icon_right@2x.png" class="icon-right" alt="" id="next-img">
 </div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+<script src="~/Scripts/zoom-image.js"></script>
+<script src="~/Scripts/main.js"></script>
+
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+
